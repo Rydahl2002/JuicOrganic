@@ -11,6 +11,7 @@ body {
     xbackground-image: linear-gradient(#FBDB2D60, #FBC6D760, #98BF1C60);
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -134,8 +135,6 @@ body {
 /* Footer */
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     background: #98BF1C60;
     color: white;
     padding: 50px 20px;
@@ -244,3 +243,14 @@ footer {
     padding-top: 20px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
