@@ -14,7 +14,7 @@ html, body {
 
 body {
     font-family: "DM Sans", sans-serif;
-    background-image: linear-gradient(#FBDB2D60, #FBC6D760, #98BF1C);
+    background-image: linear-gradient(#FBDB2D70, #FBC6D770, #98BF1C);
     height: 100%;
     margin: 0;
 }
@@ -25,11 +25,13 @@ body {
     height: 60px;
     width: 100%;
     background-color: white;
-    position: relative;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;;
+    padding: 0 15px;
+
 }
 
 .nav-header {
@@ -195,13 +197,13 @@ body {
 
 .buttonOne,
 .buttonTwo {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 15px 25px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
     background-color: transparent;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
     text-align: center;
     cursor: pointer;
     max-width: 300px;
@@ -218,7 +220,7 @@ body {
 
 .buttonOne:hover,
 .buttonTwo:hover {
-    opacity: 0.9;
+    transform: scale(1.1);
 }
 
 
@@ -308,7 +310,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 
@@ -332,6 +334,82 @@ body {
 
 }
 
+/* Reviews */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 10px;
+}
+
+/* Individuelle slides */
+.carousel-slide {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-card{
+    background-color: white;
+    border: 2px solid #98BF1C;
+    border-radius: 20px;
+    width: 375px;
+    padding: 20px;
+}
+
+.carousel-card hr{
+    border-top: 2px solid #FBC6D7;
+    margin: 20px;
+}
+
+.carousel-slide img {
+    width: 375px;
+    margin-bottom: 10px;
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FBC6D7;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #EEA61E;
+}
+
+
+
+.review img{
+    width: 250px;
+}
 
 
 /* Footer */
@@ -432,4 +510,17 @@ footer {
     color: #fff;
     padding-top: 20px;
     text-align: center;
+}
+
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
