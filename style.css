@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +19,20 @@ body {
 }
 
 
-/* Navigationsbar */
+/* -----SCROLL ANIMATION----- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -----NAVIGATIONSBAR----- */
 .nav {
     height: 60px;
     width: 100%;
@@ -136,7 +148,7 @@ body {
 
 
 
-/* Hero Section */
+/* -----HERO SECTION----- */
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -225,7 +237,7 @@ body {
 
 
 
-/* Besøg butikken */
+/* -----BESØG BUTIKKEN----- */
 .grid-section2 {
     margin: 20px;
     padding: 20px;
@@ -247,7 +259,7 @@ body {
 
 
 
-/* Mærkesager */
+/* -----MÆRKESAGER----- */
 .heading {
     display: flex;
     flex-direction: column;
@@ -314,7 +326,7 @@ body {
 }
 
 
-/* Sortiment */
+/* -----SORTIMENT----- */
 .juice-container {
     display: flex;
     flex-direction: row;
@@ -327,14 +339,14 @@ body {
 }
 @media (min-width: 768px) {
     .juice-container img{
-        width: 300px;
+        width: 350px;
     }
 }
 .juice-container img:hover{
 
 }
 
-/* Reviews */
+/* -----REVIEWS----- */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -344,14 +356,12 @@ body {
     margin-bottom: 50px;
 }
 
-
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-left: 10px;
 }
 
-/* Individuelle slides */
 .carousel-slide {
     text-align: center;
     padding: 20px;
@@ -376,7 +386,6 @@ body {
     width: 375px;
     margin-bottom: 10px;
 }
-
 
 .carousel-button {
     position: absolute;
@@ -406,13 +415,13 @@ body {
 }
 
 
-
+/* -----TRUSTPILOT----- */
 .review img{
     width: 250px;
 }
 
 
-/* Footer */
+/* -----FOOTER----- */
 footer {
     width: 100%;
     color: white;
@@ -514,13 +523,3 @@ footer {
 
 
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
