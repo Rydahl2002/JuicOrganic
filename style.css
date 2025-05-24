@@ -19,6 +19,7 @@ body {
 }
 
 
+
 /* -----SCROLL ANIMATION----- */
 .fade-in {
     opacity: 0;
@@ -43,7 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-
+    z-index: 100;
 }
 
 .nav-header {
@@ -382,11 +383,6 @@ body {
     margin: 20px;
 }
 
-.carousel-slide img {
-    width: 375px;
-    margin-bottom: 10px;
-}
-
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -413,6 +409,44 @@ body {
 .carousel-button:hover {
     background-color: #EEA61E;
 }
+
+.carousel-card-pics img {
+    border-radius: 20px;
+}
+
+.carousel-slide-sortiment {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-card-sortiment{
+    background-color: white;
+    border: 2px solid #FBC6D7;
+    border-radius: 20px;
+    width: 375px;
+    padding: 20px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-image {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+
 
 
 /* -----TRUSTPILOT----- */
