@@ -26,15 +26,17 @@ nextButton.addEventListener('click', () => {
 
 
 
-
-const faders = document.querySelectorAll('.fade-in');
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
+            // Tilføj "visible" uanset type
             entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // valgfrit: kun én gang
         }
     });
 });
 
-faders.forEach(el => observer.observe(el));
+// Observer alle med fade-in eller shake-on-scroll
+document.querySelectorAll('.fade-in, .shake-on-scroll').forEach(el => {
+    observer.observe(el);
+});

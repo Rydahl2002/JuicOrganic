@@ -15,12 +15,11 @@ body {
     font-family: "DM Sans", sans-serif;
     background-image: linear-gradient(#FBDB2D70, #FBC6D770, #98BF1C);
     height: 100%;
-    margin: 0;
 }
 
 
 
-/* -----SCROLL ANIMATION----- */
+/* -----SCROLL ANIMATION - FADE-IN----- */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -31,6 +30,30 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* -----SCROLL ANIMATION - SHAKE----- */
+.shake-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.shake-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: shake 0.8s ease;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+
 
 
 /* -----NAVIGATIONSBAR----- */
@@ -55,8 +78,6 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 8px;
-    text-decoration: none;
 }
 
 .logo {
@@ -154,7 +175,7 @@ body {
     width: 100%;
     height: 100vh;
     padding: 3rem 2rem;
-    background-image: url('apples.jpg');
+    background-image: url('own_pics/JO (20 of 35).jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -162,19 +183,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 .hero-section h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 0;
     font-family: "futura-pt-bold", sans-serif;
+    color: white;
 }
 
 .hero-section h5 {
     font-size: 1rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 @media (min-width: 768px) {
@@ -210,8 +232,8 @@ body {
 
 .buttonOne,
 .buttonTwo {
-    padding: 15px 25px;
-    font-size: 16px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
     background-color: transparent;
@@ -219,7 +241,7 @@ body {
     transition: all 0.3s ease-in-out;
     text-align: center;
     cursor: pointer;
-    max-width: 300px;
+    max-width: 18rem;
     width: 100%;
 }
 
@@ -240,8 +262,8 @@ body {
 
 /* -----BESØG BUTIKKEN----- */
 .grid-section2 {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.5rem;
+    padding: 1.5rem;
     background-color: #FBC6D7;
     border: 4px solid #EEA61E;
     border-radius: 20px;
@@ -266,11 +288,11 @@ body {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .heading h2 {
-    font-size: 36px;
+    font-size: 2rem;
     font-family: "futura-pt-bold", sans-serif;
 }
 
@@ -323,7 +345,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 1.5rem;
 }
 
 
@@ -353,8 +375,8 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .carousel-track {
@@ -412,6 +434,7 @@ body {
 
 .carousel-card-pics img {
     border-radius: 20px;
+    width: 375px;
 }
 
 .carousel-slide-sortiment {
@@ -459,7 +482,7 @@ body {
 footer {
     width: 100%;
     color: white;
-    padding: 50px 20px;
+    padding: 3rem 1.5rem;
 }
 
 .footer-container {

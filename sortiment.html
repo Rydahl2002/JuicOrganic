@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuicOrganic</title>
+    <title>JuicOrganic | Sortiment</title>
+    <meta name="description" content="Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.">
+    <meta name="keywords" content="økologisk juice, dansk juice, frugtjuice, sunde drikke, økologi, bæredygtighed">
+
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/31fb47af2d.js" crossorigin="anonymous"></script>
@@ -13,16 +16,43 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/kwg6huq.css">
 </head>
+
+
 <body>
 
-<!-- Review carousel -->
+<!-- Navigationsbar -->
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <a href="index.html" class="logo-container">
+            <img src="JuicOrganic.png" alt="JuicOrganic logo" class="logo">
+        </a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">FORSIDE</a>
+        <a href="juicebaren.html">OM JUICEBAREN</a>
+        <a href="sortiment.html">SORTIMENT</a>
+
+    </div>
+</div>
+
+
+<!-- Sortiment carousel -->
 <div class="carousel-container fade-in">
     <div class="carousel-track">
         <div class="carousel-slide-sortiment">
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>ÆBLER</h3>
-                    <img src="Æbler.png" alt="Æbler" class="card-image">
+                    <img src="Æbler.png" alt="En bunke med grønne og røde æbler" class="card-image">
                 </div>
                 <div class="card-text">
                 <p>🌍 Oprindelse: Danmark eller Nordeuropa (økologiske frilandsæbler)<br>
@@ -35,7 +65,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>APPELSINER</h3>
-                    <img src="Appelsiner.png" alt="Æbler" class="card-image">
+                    <img src="Appelsiner.png" alt="En bunke med appelsiner" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Spanien / Italien – økologisk citrusproduktion <br>
@@ -48,7 +78,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>RABARBER</h3>
-                    <img src="Rabarber.png" alt="Æbler" class="card-image">
+                    <img src="Rabarber.png" alt="En kurv med rød rabarber med grøn top på" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Dyrket i Danmark og Holland i sæson (økologisk) <br>
@@ -61,7 +91,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>MANGO</h3>
-                    <img src="Mango.png" alt="Æbler" class="card-image">
+                    <img src="Mango.png" alt="En bunke med mangoer" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk dyrket i Peru, Indien og Afrika <br>
@@ -74,7 +104,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>ANANAS</h3>
-                    <img src="Ananas.png" alt="Æbler" class="card-image">
+                    <img src="Ananas.png" alt="En overskårret ananas i skiver" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk plantage i Costa Rica eller Filippinerne <br>
@@ -87,7 +117,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>HYLDEBLOMST</h3>
-                    <img src="Hyldeblomst.png" alt="Æbler" class="card-image">
+                    <img src="Hyldeblomst.png" alt="En bunke med hyldeblomster og grønne blade" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Håndplukket i Danmark (økologiske blomsterskærme) <br>
@@ -100,7 +130,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>KIWI</h3>
-                    <img src="Kiwi.png" alt="Æbler" class="card-image">
+                    <img src="Kiwi.png" alt="En hel og to halve kiwier" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk fra Grækenland og Italien <br>
@@ -113,7 +143,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>GRAPEFRUGT</h3>
-                    <img src="Grapefrugt.png" alt="Æbler" class="card-image">
+                    <img src="Grapefrugt.png" alt="En bunke med grapefrugter og grønne blade" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk fra Spanien / Sydafrika <br>
@@ -126,7 +156,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>JORDBÆR</h3>
-                    <img src="Jordbær.png" alt="Æbler" class="card-image">
+                    <img src="Jordbær.png" alt="En stor bunke danske jordbær" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Dansk i sæson, ellers fra Polen (økologisk dyrket) <br>
@@ -139,7 +169,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>PASSIONSFRUGT</h3>
-                    <img src="Passionsfrugt.png" alt="Æbler" class="card-image">
+                    <img src="Passionsfrugt.png" alt="En bunke med passionsfrugt" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk fra Kenya, Vietnam, Ecuador <br>
@@ -152,7 +182,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>SOLBÆR</h3>
-                    <img src="Solbær.png" alt="Æbler" class="card-image">
+                    <img src="Solbær.png" alt="En bunke med solbær" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Nordeuropæisk oprindelse (økologisk) <br>
@@ -165,7 +195,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>INGEFÆR</h3>
-                    <img src="Ingefær.png" alt="Æbler" class="card-image">
+                    <img src="Ingefær.png" alt="En udskåret ingefær og nogle grønne blade" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk dyrket i Indien og Peru <br>
@@ -178,7 +208,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>MYNTE</h3>
-                    <img src="Mynte.png" alt="Æbler" class="card-image">
+                    <img src="Mynte.png" alt="En bunke mynteblade" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Dyrkes økologisk i Danmark og Holland <br>
@@ -191,7 +221,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>SPINAT</h3>
-                    <img src="Spinat.png" alt="Æbler" class="card-image">
+                    <img src="Spinat.png" alt="En bunke spinatplade" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk fra Italien eller Danmark <br>
@@ -204,6 +234,48 @@
     <button class="carousel-button prev">&laquo;</button>
     <button class="carousel-button next">&raquo;</button>
 </div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="col-1">
+            <img src="logo.png" alt="JuicOrganic logo">
+            <p>JuicOrganic er en dansk virksomhed, som vil gøre det let og sjovt for alle at vælge økologisk, bæredygtig og personlig juice – blandet med omtanke og serveret med glæde.
+            </p>
+        </div>
+        <div class="col-2">
+            <h3 class="col-title">KONTAKT</h3>
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Guldbergsgade 29C, 2200 København N</li>
+                <li><i class="fa-solid fa-envelope"></i> info@juicorganic.dk</li>
+                <li><i class="fa-solid fa-phone"></i> +45 26 28 45 60</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3 class="col-title">GENVEJE</h3>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="juicebaren.html">Om juicebaren</a></li>
+                <li><a href="sortiment.html">Sortiment</a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h3 class="col-title">ÅBNINGSTIDER</h3>
+            <p>Mandag - søndag kl. 10-17</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <p>© 2025 | JuicOrganic A/S All rights reserved.</p>
+    </div>
+</footer>
 
 
 

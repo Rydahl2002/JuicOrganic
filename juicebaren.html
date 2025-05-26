@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuicOrganic</title>
+    <title>JuicOrganic | Om juicebaren</title>
+    <meta name="description" content="Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.">
+    <meta name="keywords" content="økologisk juice, dansk juice, frugtjuice, sunde drikke, økologi, bæredygtighed">
+
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/31fb47af2d.js" crossorigin="anonymous"></script>
@@ -13,7 +16,35 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/kwg6huq.css">
 </head>
+
+
+
 <body>
+
+<!-- Navigationsbar -->
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <a href="index.html" class="logo-container">
+            <img src="JuicOrganic.png" alt="JuicOrganic logo" class="logo">
+        </a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">FORSIDE</a>
+        <a href="juicebaren.html">OM JUICEBAREN</a>
+        <a href="sortiment.html">SORTIMENT</a>
+
+    </div>
+</div>
+
 
 <!-- Billede carousel -->
 <div class="carousel-container fade-in">
@@ -47,6 +78,49 @@
     <button class="carousel-button prev">&laquo;</button>
     <button class="carousel-button next">&raquo;</button>
 </div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="col-1">
+            <img src="logo.png" alt="JuicOrganic logo">
+            <p>JuicOrganic er en dansk virksomhed, som vil gøre det let og sjovt for alle at vælge økologisk, bæredygtig og personlig juice – blandet med omtanke og serveret med glæde.
+            </p>
+        </div>
+        <div class="col-2">
+            <h3 class="col-title">KONTAKT</h3>
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Guldbergsgade 29C, 2200 København N</li>
+                <li><i class="fa-solid fa-envelope"></i> info@juicorganic.dk</li>
+                <li><i class="fa-solid fa-phone"></i> +45 26 28 45 60</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3 class="col-title">GENVEJE</h3>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="juicebaren.html">Om juicebaren</a></li>
+                <li><a href="sortiment.html">Sortiment</a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h3 class="col-title">ÅBNINGSTIDER</h3>
+            <p>Mandag - søndag kl. 10-17</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <p>© 2025 | JuicOrganic A/S All rights reserved.</p>
+    </div>
+</footer>
+
 
 
 <script src="script.js"></script>

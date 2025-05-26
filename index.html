@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuicOrganic</title>
+    <meta name="description" content="Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.">
+    <meta name="keywords" content="økologisk juice, dansk juice, frugtjuice, sunde drikke, økologi, bæredygtighed">
+
   <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/31fb47af2d.js" crossorigin="anonymous"></script>
@@ -17,13 +20,13 @@
 
 <body>
 
-
 <!-- Navigationsbar -->
+<nav>
 <div class="nav">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
             <a href="index.html" class="logo-container">
-                <img src="JuicOrganic.png" alt="JuicOrganic logo" class="logo">
+                <img src="JuicOrganic.png" alt="JuicOrganic primære logo" class="logo">
             </a>
     </div>
     <div class="nav-btn">
@@ -35,14 +38,16 @@
     </div>
 
     <div class="nav-links">
-        <a href="#">FORSIDE</a>
-        <a href="#">OM JUICEBAREN</a>
-        <a href="#">SORTIMENT</a>
+        <a href="index.html">FORSIDE</a>
+        <a href="juicebaren.html">OM JUICEBAREN</a>
+        <a href="sortiment.html">SORTIMENT</a>
 
     </div>
 </div>
+</nav>
 
-<main class="page-wrapper">
+
+<main>
 
 <!-- Hero section -->
     <section class="hero-section">
@@ -51,8 +56,8 @@
         <h5>Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.</h5>
 
         <div class="button-group">
-            <a href="#" class="buttonOne">JUICEBAREN</a>
-            <a href="#" class="buttonTwo">SORTIMENT</a>
+            <a href="juicebaren.html" class="buttonOne">JUICEBAREN</a>
+            <a href="sortiment.html" class="buttonTwo">SORTIMENT</a>
         </div>
     </section>
 
@@ -66,22 +71,23 @@
                 <p>Her kan du blande din helt egen økologiske juice direkte på skærmen – vælg dine yndlingsfrugter, tilføj grønt og oplev smagen af ægte friskhed. Det er sundhed, du selv har valgt!</p>
             </div>
             <div class="flex-image2">
-                <img src="butik.png" alt="Billede 1">
+                <img src="butik.png" alt="Mockup af JuicOrganic butikken">
             </div>
         </div>
     </section>
 
 
 <!-- Mærkesager -->
+    <section>
     <div class="heading">
         <h2>JA TAK TIL ORGANISK JUICE</h2>
         <p>Vores virksomhed blev grundlagt med ønsket om at levere sunde, lækre og økologiske drikkevarer af høj kvalitet. Vi fokuserer på at tilbyde produkter i nem og fleksibel emballage, der passer til livsstilen hos kvalitetsbevidste forbrugere. Hos os finder du naturlige drikke, der kombinerer smag og næring uden kompromis, ideelle til dem, der værdsætter både sundhed og bekvemmelighed.</p>
     </div>
 
-  <section class="grid-section">
+  <div class="grid-section">
       <div class="flex-row fade-in">
             <div class="flex-image">
-                <img src="grøn.png" alt="Billede 1">
+                <img src="grøn.png" alt="2 grønne blade, som er et ikon der skal symbolisere økologi">
             </div>
             <div class="flex-text">
                 <h3>ØKOLOGISKE RÅVARER</h3>
@@ -91,7 +97,7 @@
 
         <div class="flex-row fade-in">
             <div class="flex-image">
-                <img src="miljøvenlig.png" alt="Billede 2">
+                <img src="miljøvenlig.png" alt="3 grønne blade i en trekant, som er et ikon der skal symbolisere bæredygtighed">
             </div>
             <div class="flex-text">
                 <h3>MILJØVENLIG EMBALLAGE</h3>
@@ -101,7 +107,7 @@
 
         <div class="flex-row fade-in">
             <div class="flex-image">
-                <img src="personlig.png" alt="Billede 3">
+                <img src="personlig.png" alt="En person af grønne blade, som skal symbolisere et personligt valg af økologi">
             </div>
             <div class="flex-text">
                 <h3>PERSONLIG JUICE-BESTILLING</h3>
@@ -109,16 +115,16 @@
             </div>
         </div>
         <div class="centerbtn">
-        <a href="#" class="buttonTwo">OM JUICEBAREN</a>
+        <a href="juicebaren.html" class="buttonTwo">OM JUICEBAREN</a>
     </div>
+</div>
 </section>
-
 
 <!-- Teamet bag -->
     <section class="grid-section2 fade-in">
         <div class="flex-row">
             <div class="flex-image2">
-                <img src="people.jpg" alt="Billede 1">
+                <img src="people.jpg" alt="3 personer på en æbleplantage, teamet bag JuicOrganic">
             </div>
             <div class="flex-text">
                 <h3>VISIONEN BAG JUICORGANIC</h3>
@@ -131,21 +137,28 @@
 
 
 <!-- Sortiment -->
+<section>
     <div class="heading fade-in">
         <h2>SE VORES ØKOLOGISKE UDVALG</h2>
     </div>
     
     <div class="juice-container fade-in">
-        <div style="rotate: -10deg; transform: translateY(30px)"><img src="Appelsinjuice.png" alt=""></div>
-        <div><img src="Æblejuice.png" alt=""></div>
-        <div style="rotate: 10deg; transform: translateY(30px)" ><img src="Grapejuice.png" alt=""></div>
+        <div style="rotate: -10deg; transform: translateY(30px)"><img src="Appelsinjuice.png" alt="Et glas gul juice og 3 appelsiner"></div>
+        <div><img src="Æblejuice.png" alt="Et glas med grøn juice og nogle æbler og vindruer"></div>
+        <div style="rotate: 10deg; transform: translateY(30px)" ><img src="Grapejuice.png" alt="Et glas med orange juice og 4 grapefrugter"></div>
     </div>
     <div class="centerbtn fade-in">
-        <a href="#" class="buttonTwo">SE SORTIMENTET</a>
+        <a href="sortiment.html" class="buttonTwo">SE SORTIMENTET</a>
+    </div>
+</section>
+    
+    
+    <div class="shake-on-scroll centerbtn">
+        <img src="organic.png" alt="">
     </div>
 
-
 <!-- Review carousel -->
+<section>
     <div class="carousel-container fade-in">
         <div class="carousel-track">
             <div class="carousel-slide">
@@ -188,19 +201,17 @@
         <button class="carousel-button next">&raquo;</button>
     </div>
 
-
-
-
-
+<!-- Review see more -->
     <div class="heading">
         <h2>SE FLERE ANMELDELSER PÅ</h2>
         <div class="review">
-        <img src="Trustpilot_Logo_(2022).svg.webp" alt="" style="margin-bottom: 15px">
+        <img src="Trustpilot_Logo_(2022).svg.webp" alt="Anmeldelsesplatformen Trustpilots logo" style="margin-bottom: 15px">
         <p><b>Fremragende</b></p>
-        <img src="trustpilot-5stjerner.png" alt="">
+        <img src="trustpilot-5stjerner.png" alt="5 stjernet anmeldelse fra Trustpilot">
         <p>Baseret på <b><u>428</u></b> anmeldelser</p>
         </div>
     </div>
+</section>
 
 </main>
 
@@ -209,7 +220,7 @@
 <footer>
     <div class="footer-container">
         <div class="col-1">
-            <img src="logo.png" alt="JuicOrganic logo">
+            <img src="logo.png" alt="JuicOrganic hvidenprimære logo">
             <p>JuicOrganic er en dansk virksomhed, som vil gøre det let og sjovt for alle at vælge økologisk, bæredygtig og personlig juice – blandet med omtanke og serveret med glæde.
             </p>
         </div>
@@ -224,9 +235,9 @@
         <div class="col-3">
             <h3 class="col-title">GENVEJE</h3>
             <ul>
-                <li><a href="#">Forside</a></li>
-                <li><a href="#">Om juicebaren</a></li>
-                <li><a href="#">Sortiment</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="juicebaren.html">Om juicebaren</a></li>
+                <li><a href="sortiment.html">Sortiment</a></li>
             </ul>
         </div>
         <div class="col-4">
