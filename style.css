@@ -465,6 +465,29 @@ main {
 
 /* -----OM JUICEBAR SIDEN----- */
 
+.juicebaren-title{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.juicebaren-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "futura-pt-bold", sans-serif;
+    text-align: center;
+}
+
+.juicebaren-text p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.juicebaren-image{
+}
+
+
 .grid-section3 {
     margin: 1.5rem;
     padding: 1.5rem;
