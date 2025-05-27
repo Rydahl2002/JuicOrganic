@@ -479,6 +479,22 @@ main {
     text-align: left;
 }
 
+.flex-text2 {
+    flex: 1;
+}
+
+.flex-text2 h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-family: "futura-pt-bold", sans-serif;
+}
+
+.flex-text2 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 @media (min-width: 768px) {
     .flex-row2 {
         flex-direction: row;
