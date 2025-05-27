@@ -246,7 +246,7 @@ main {
 
 
 /* -----BESØG BUTIKKEN----- */
-.grid-section2 {
+.grid-section-pink-box {
     margin: 1.5rem;
     padding: 1.5rem;
     background-color: #FBC6D7;
@@ -254,7 +254,7 @@ main {
     border-radius: 20px;
 }
 
-.grid-section2 h3 {
+.grid-section-pink-box h3 {
     font-family: "futura-pt-bold", sans-serif;
 }
 
@@ -485,6 +485,13 @@ main {
 }
 
 .juicebaren-image{
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 
