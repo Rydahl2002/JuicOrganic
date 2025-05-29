@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuicOrganic | Sortiment</title>
+    <!-- Der er blevet brugt AI til at lave en description og keywords i forbindelse med en tråd om SEO optimering -->
     <meta name="description" content="Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.">
     <meta name="keywords" content="økologisk juice, dansk juice, frugtjuice, sunde drikke, økologi, bæredygtighed">
 
@@ -20,7 +21,8 @@
 
 <body>
 
-<!-- Navigationsbar -->
+<!-- NAVIGATIONSBAR -->
+<!--- Koden er taget fra en gammel opgave på 2. semester. Der er blevet brugt AI til at simplificere især CSS'en for at sikre responsivitet og mobilvenlighed --->
 <nav class="navbar">
     <a href="index.html" class="logo">
         <img src="JuicOrganic.png" alt="JuicOrganic logo">
@@ -28,9 +30,7 @@
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <i class="fa-solid fa-bars"></i>
     </label>
 
     <ul class="nav-links">
@@ -42,8 +42,7 @@
 
 <main>
 
-    <!--SORTIMENT -->
-
+<!-- OM VORES SORTIMENT -->
     <section class="juicebaren-title">
         <div class="juicebaren-text">
             <h1>OM VORES SORTIMENT</h1>
@@ -54,18 +53,21 @@
         </div>
     </section>
 
-    <!-- VÆLG DINE FAVORITTER -->
-    <section class="grid-section3 fade-in">
+
+<!-- VÆLG DINE FAVORITTER -->
+    <section>
+    <div class="grid-section-text-box fade-in">
         <div class="flex-row2">
             <div class="flex-text2">
                 <h3>VÆLG DINE FAVORITTER</h3>
                 <p>Udforsk vores brede udvalg af frisk frugt og grønt – alt 100 % økologisk og klar til at blive presset. Kombinér dine yndlingssmage og skab din helt personlige juiceoplevelse, fuld af smag, næring og naturlig friskhed, på bestillingsskærmen i juicbaren.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-<!-- Sortiment carousel -->
-<div class="carousel-container fade-in">
+<!-- SORTIMENT CAROUSEL -->
+    <!-- Der er blevet brugt AI til at opstille kortene, med tekst og billede, korrekt placeret ift. vores mockup -->
+    <div class="carousel-container fade-in">
     <div class="carousel-track">
         <div class="carousel-slide-sortiment">
             <div class="carousel-card-sortiment">
@@ -123,7 +125,7 @@
             <div class="carousel-card-sortiment">
                 <div class="card-top">
                     <h3>ANANAS</h3>
-                    <img src="Ananas.png" alt="En overskårret ananas i skiver" class="card-image">
+                    <img src="Ananas2.png" alt="En overskårret ananas i skiver" class="card-image">
                 </div>
                 <div class="card-text">
                     <p>🌍 Oprindelse: Økologisk plantage i Costa Rica eller Filippinerne <br>
@@ -253,23 +255,27 @@
     <button class="carousel-button prev">&laquo;</button>
     <button class="carousel-button next">&raquo;</button>
 </div>
+    </section>
 
 
+    <!--- Der er blevet brugt AI til at lave en scroll animation, som vi så selv har tilpasset til at rotate som vi ønskede --->
     <div class="shake-on-scroll centerbtn">
         <img src="less_waste.png" alt="">
     </div>
 
-    <!-- FARMER´S CHOICE -->
-    <section class="grid-section3 fade-in">
+
+<!-- FARMER´S CHOICE -->
+    <section>
+        <div  class="grid-section-text-box fade-in">
         <div class="flex-row2">
             <div class="flex-text2">
                 <h3>FARMER´S CHOICE</h3>
                 <p>Vores Farmer’s Choice-sortiment består af seks nøje udvalgte økologiske juicevarianter, der er populære blandt vores kunder og passer til både børn og voksne. Sortimentet byder på både klassikere og sæsoninspirerede smage – alle uden kunstige tilsætningsstoffer.</p>
             </div>
         </div>
-    </section>
+        </div>
 
-    <!-- Farmer´s choice carousel -->
+<!-- FARMER'S CHOICE CAROUSEL -->
     <div class="carousel-container fade-in">
         <div class="carousel-track">
             <div class="carousel-slide-sortiment">
@@ -297,50 +303,11 @@
             <div class="carousel-slide-sortiment">
                 <div class="carousel-card-sortiment">
                     <div class="card-top">
-                        <h3>ØKOLOGISK RABARBERDRIK</h3>
-                        <img src="rabarbersaft.png" alt="En kurv med rød rabarber med grøn top på" class="card-image">
+                        <h3>ØKOLOGISK ANANASJUICE</h3>
+                        <img src="ananasjuice.png" alt="En kurv med rød rabarber med grøn top på" class="card-image">
                     </div>
                     <div class="card-text">
-                        <p>Let syrlig og dejligt forfriskende – vores rabarberdrik er lavet på økologiske rabarber og bringer sommerstemningen frem hele året.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-slide-sortiment">
-                <div class="carousel-card-sortiment">
-                    <div class="card-top">
-                        <h3>MANGO</h3>
-                        <img src="Hyldeblomst.png" alt="En bunke med mangoer" class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <p>🌍 Oprindelse: Økologisk dyrket i Peru, Indien og Afrika <br>
-                            ✅ Karakteristik: Cremet, sød og tropisk – balancerer syrlige frugter godt <br>
-                            ⚠️ Allergi: Krydsreaktion mulig ved latexallergi; pas på ved følsom hud</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-slide-sortiment">
-                <div class="carousel-card-sortiment">
-                    <div class="card-top">
-                        <h3>ANANAS</h3>
-                        <img src="ananasjuice.png" alt="En overskårret ananas i skiver" class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <p>🌍 Oprindelse: Økologisk plantage i Costa Rica eller Filippinerne <br>
-                            ✅ Karakteristik: Sød med et strejf af syre – tropisk og saftig <br>
-                            ⚠️ Allergi: Indeholder enzymet bromelain, som kan irritere mund og slimhinder</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-slide-sortiment">
-                <div class="carousel-card-sortiment">
-                    <div class="card-top">
-                        <h3>HYLDEBLOMST</h3>
-                        <img src="solbærsaft.png" alt="En bunke med hyldeblomster og grønne blade" class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <p>🌍 Oprindelse: Håndplukket i Danmark (økologiske blomsterskærme) <br>
-                            ✅ Karakteristik: Blid, floral og aromatisk – fungerer godt med citrus <br>
-                            ⚠️ Allergi: Kan give lette reaktioner hos pollenallergikere</p>
+                        <p>Tropisk og naturligt sød – presset på økologisk ananas, der giver en eksotisk og frisk smagsoplevelse.</p>
                     </div>
                 </div>
             </div>
@@ -348,8 +315,10 @@
         <button class="carousel-button prev">&laquo;</button>
         <button class="carousel-button next">&raquo;</button>
     </div>
+    </section>
 
-    <!--JUICE I KARTON - PERFEKTE TIL DE SMÅ -->
+
+<!--JUICE I KARTON - PERFEKTE TIL DE SMÅ -->
     <section class="grid-section fade-in">
         <div class="flex-row">
             <div class="flex-text2">
@@ -362,12 +331,15 @@
         </div>
     </section>
 
-    <div class="shake-on-scroll centerbtn">
-        <img src="save_the_planet.png" alt="">
+
+    <!--- Der er blevet brugt AI til at lave en scroll animation, som vi så selv har tilpasset til at rotate som vi ønskede --->
+    <div class="shake-on-scroll centerbtn" style="margin-bottom: 75px">
+        <img src="save_the_planet.png" alt="Save the planet ikon">
     </div>
 
-    <!-- MERE END BARE GOD JUICE -->
-    <section class="grid-section3 fade-in">
+
+<!-- MERE END BARE GOD JUICE -->
+    <section class="grid-section-text-box fade-in">
         <div class="flex-row2">
             <div class="flex-text2">
                 <h3>MERE END BARE GOD JUICE</h3>
@@ -384,6 +356,7 @@
 </main>
 
 <!-- Footer -->
+<!-- Footerens opstilling er inspireret af en kode af Mubashar Nouman, som er fundet på github. Justeret til at ligne vores mock-up og brugt AI til at få placeret footeren korrekt på siden -->
 <footer>
     <div class="footer-container">
         <div class="col-1">
@@ -419,7 +392,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-2">
+    <div class="footer-bottom">
         <p>© 2025 | JuicOrganic A/S All rights reserved.</p>
     </div>
 </footer>

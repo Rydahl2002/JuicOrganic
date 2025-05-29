@@ -1,3 +1,5 @@
+// CAROUSEL
+
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const prevButton = document.querySelector('.carousel-button.prev');
@@ -26,12 +28,16 @@ nextButton.addEventListener('click', () => {
 
 
 
+
+
+// SCROLL ANIMATION
+// Optimeret med hjælp fra AI til at kombinere flere scroll-baserede animationer i én samlet IntersectionObserver. Dette reducerer kodegentagelse og forbedrer performance ved at bruge én observer i stedet for flere.
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             // Tilføj "visible" uanset type
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // valgfrit: kun én gang
+            observer.unobserve(entry.target);
         }
     });
 });

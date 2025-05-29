@@ -23,6 +23,7 @@ main {
 
 
 /* -----SCROLL ANIMATION - FADE-IN----- */
+/* Scroll-fade-in effekt genereret via AI for at skabe visuel dynamik ved scrolling */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -36,6 +37,7 @@ main {
 
 
 /* -----SCROLL ANIMATION - SHAKE----- */
+/* "Shake" animation på billede tilføjet med AI for at gøre elementet mere interaktivt */
 .shake-on-scroll {
     opacity: 0;
     transform: translateY(20px);
@@ -60,6 +62,7 @@ main {
 
 
 /* -----NAVIGATIONSBAR----- */
+/* Koden er taget fra en gammel opgave på 2. semester. Der er blevet brugt AI til at simplificere CSS'en for at sikre responsivitet og mobilvenlighed */
 .navbar {
     display: flex;
     align-items: center;
@@ -85,19 +88,11 @@ main {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    gap: 5px;
-}
-
-.burger span {
-    width: 25px;
-    height: 3px;
-    background: black;
-    border-radius: 2px;
 }
 
 .nav-links {
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -108,7 +103,7 @@ main {
 }
 
 .nav-links li {
-    margin: 1rem 0;
+    margin: 2rem;
 }
 
 .nav-links a {
@@ -122,7 +117,8 @@ main {
     display: flex;
 }
 
-/* === Desktop (min-width) === */
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
+/* Desktop */
 @media (min-width: 768px) {
     .burger {
         display: none;
@@ -130,7 +126,7 @@ main {
 
     .nav-links {
         position: static;
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         gap: 1.5rem;
         background: none;
@@ -145,10 +141,6 @@ main {
     .nav-links a:hover {
         font-weight: bold;
     }
-
-    .navbar {
-        justify-content: space-between;
-    }
 }
 
 
@@ -156,6 +148,7 @@ main {
 
 
 /* -----HERO SECTION----- */
+/* Koden er taget fra en gammel opgrave på 1. semester, hvor der blev brugt Bootstrap. Vi har fået AI til at omskrive koden fra Bootstrap til ren HTML og CSS */
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -184,6 +177,7 @@ main {
     color: white;
 }
 
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
 @media (min-width: 768px) {
     .hero-section {
         padding: 5rem;
@@ -208,6 +202,7 @@ main {
     gap: 1rem;
 }
 
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
 @media (min-width: 768px) {
     .button-group {
         flex-direction: row;
@@ -268,6 +263,7 @@ main {
 
 
 /* -----MÆRKESAGER----- */
+/* Der er blevet brugt AI til at få opstillet flex-boxen korrekt */
 .heading {
     display: flex;
     flex-direction: column;
@@ -296,6 +292,7 @@ main {
     text-align: center;
 }
 
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
 @media (min-width: 768px) {
     .flex-row {
         flex-direction: row;
@@ -345,16 +342,15 @@ main {
 .juice-container img {
     width: 130px;
 }
+
 @media (min-width: 768px) {
     .juice-container img{
         width: 350px;
     }
 }
-.juice-container img:hover{
 
-}
 
-/* -----REVIEWS----- */
+/* -----CAROUSEL----- */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -422,6 +418,7 @@ main {
     width: 375px;
 }
 
+/* Der er blevet brugt AI til at opstille kortene, med tekst og billede, korrekt placeret ift. vores mockup */
 .carousel-slide-sortiment {
     padding: 20px;
     display: flex;
@@ -456,7 +453,6 @@ main {
 
 
 
-
 /* -----TRUSTPILOT----- */
 .review img{
     width: 250px;
@@ -464,7 +460,6 @@ main {
 
 
 /* -----OM JUICEBAR SIDEN----- */
-
 .juicebaren-title{
     margin: 1.5rem;
     padding: 1.5rem;
@@ -484,10 +479,6 @@ main {
     text-align: center;
 }
 
-.juicebaren-image{
-
-}
-
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -495,7 +486,7 @@ main {
 }
 
 
-.grid-section3 {
+.grid-section-text-box {
     margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 20px;
@@ -525,12 +516,14 @@ main {
     line-height: 1.5;
 }
 
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
 @media (min-width: 768px) {
     .flex-row2 {
         flex-direction: row;
         text-align: left;
     }
 }
+
 
 /* -----FOOTER----- */
 footer {
@@ -547,6 +540,7 @@ footer {
     gap: 2rem;
 }
 
+/* Media queries lavet med hjælp fra AI for at sikre responsivt layout */
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
@@ -589,17 +583,12 @@ footer {
     margin-bottom: 15px;
 }
 
-.col-2 ul, .col-3 ul {
-    list-style: none;
-}
-
 .col-2 ul li, .col-3 ul li {
     margin-bottom: 10px;
 }
 
-.col-2 ul li a, .col-3 ul li a {
+.col-3 ul li a {
     color: #fff;
-    text-decoration: none;
 }
 
 .social-icons {
@@ -615,8 +604,7 @@ footer {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-inline: 5px;
     transition: all 0.5s ease;
 }
 
@@ -625,7 +613,7 @@ footer {
     color: #fff;
 }
 
-.footer-2 {
+.footer-bottom {
     width: 100%;
     color: #fff;
     padding-top: 20px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuicOrganic</title>
+    <!-- Der er blevet brugt AI til at lave en description og keywords i forbindelse med en tråd om SEO optimering -->
     <meta name="description" content="Bland din egen økologiske juice - fuld af smag, kvalitet og omtanke. Friskpresset, personlig og helt uden kompromis.">
     <meta name="keywords" content="økologisk juice, dansk juice, frugtjuice, sunde drikke, økologi, bæredygtighed">
 
@@ -20,7 +21,8 @@
 
 <body>
 
-<!-- Navigationsbar -->
+<!-- NAVIGATIONSBAR -->
+<!--- Koden er taget fra en gammel opgave på 2. semester. Der er blevet brugt AI til at simplificere især CSS'en for at sikre responsivitet og mobilvenlighed --->
 <nav class="navbar">
     <a href="index.html" class="logo">
         <img src="JuicOrganic.png" alt="JuicOrganic logo">
@@ -28,9 +30,7 @@
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <i class="fa-solid fa-bars"></i>
     </label>
 
     <ul class="nav-links">
@@ -43,7 +43,8 @@
 
 <main>
 
-<!-- Hero section -->
+<!-- HERO SECTION -->
+    <!--- Koden er taget fra en gammel opgrave på 1. semester, hvor der blev brugt Bootstrap. Vi har fået AI til at omskrive koden fra Bootstrap til ren HTML og CSS --->
     <section class="hero-section">
         <h1>DIN BÆREDYGTIGE JUICEBAR</h1>
 
@@ -56,7 +57,7 @@
     </section>
 
 
-<!-- Besøg butikken -->
+<!-- BESØG BUTIKKEN -->
     <section class="grid-section-pink-box fade-in">
         <div class="flex-row">
             <div class="flex-text">
@@ -71,7 +72,8 @@
     </section>
 
 
-<!-- Mærkesager -->
+<!-- MÆRKESAGER -->
+    <!--- Der er blevet brugt AI til at få opstillet flex-boxen korrekt --->
     <section>
     <div class="heading">
         <h2>JA TAK TIL ORGANISK JUICE</h2>
@@ -114,7 +116,8 @@
 </div>
 </section>
 
-<!-- Teamet bag -->
+
+<!-- VISIONEN BAG -->
     <section class="grid-section-pink-box fade-in">
         <div class="flex-row">
             <div class="flex-image2">
@@ -130,14 +133,14 @@
     </section>
 
 
-<!-- Sortiment -->
+<!-- SORTIMENT -->
 <section>
     <div class="heading fade-in">
         <h2>SE VORES ØKOLOGISKE UDVALG</h2>
     </div>
     
     <div class="juice-container fade-in">
-        <div style="rotate: -10deg; transform: translateY(30px)"><img src="Appelsinjuice.png" alt="Et glas gul juice og 3 appelsiner"></div>
+        <div style="rotate: -10deg; transform: translateY(30px)"><img src="Appelsinjuice.png" alt="Et glas med gul juice og 3 appelsiner"></div>
         <div><img src="Æblejuice.png" alt="Et glas med grøn juice og nogle æbler og vindruer"></div>
         <div style="rotate: 10deg; transform: translateY(30px)" ><img src="Grapejuice.png" alt="Et glas med orange juice og 4 grapefrugter"></div>
     </div>
@@ -145,13 +148,14 @@
         <a href="sortiment.html" class="buttonTwo">SE SORTIMENTET</a>
     </div>
 </section>
-    
-    
+
+    <!--- Der er blevet brugt AI til at lave en scroll animation, som vi så selv har tilpasset til at rotate som vi ønskede --->
     <div class="shake-on-scroll centerbtn">
         <img src="organic.png" alt="">
     </div>
 
-<!-- Review carousel -->
+<!-- REVIEW CAROUSEL -->
+    <!--- Koden er taget fra en gammel opgave på 1. semester --->
 <section>
     <div class="carousel-container fade-in">
         <div class="carousel-track">
@@ -202,18 +206,19 @@
         <img src="Trustpilot_Logo_(2022).svg.webp" alt="Anmeldelsesplatformen Trustpilots logo" style="margin-bottom: 15px">
         <p><b>Fremragende</b></p>
         <img src="trustpilot-5stjerner.png" alt="5 stjernet anmeldelse fra Trustpilot">
-        <p>Baseret på <b><u>428</u></b> anmeldelser</p>
+        <p>Baseret på <b>428</b> anmeldelser</p>
         </div>
     </div>
 </section>
 
 </main>
 
-<!-- Footer -->
+<!-- FOOTER -->
+<!-- Footerens opstilling er inspireret af en kode af Mubashar Nouman, som er fundet på github. Justeret til at ligne vores mock-up og brugt AI til at få placeret footeren korrekt på siden -->
 <footer>
     <div class="footer-container">
         <div class="col-1">
-            <img src="logo.png" alt="JuicOrganic hvidenprimære logo">
+            <img src="logo.png" alt="JuicOrganic hvide primære logo">
             <p>JuicOrganic er en dansk virksomhed, som vil gøre det let og sjovt for alle at vælge økologisk, bæredygtig og personlig juice – blandet med omtanke og serveret med glæde.
             </p>
         </div>
@@ -245,7 +250,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-2">
+    <div class="footer-bottom">
         <p>© 2025 | JuicOrganic A/S All rights reserved.</p>
     </div>
 </footer>
